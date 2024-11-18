@@ -1,0 +1,32 @@
+\documentclass[preview,convert={density=300,outext=.png}]{standalone}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{amsmath}
+
+\definecolor{mybackground}{rgb}{0, 0, 0}
+\pagecolor{mybackground}
+\color{white}
+\everymath{\color{white}}
+
+\begin{document}
+
+\begin{align}
+    & \sin(x) + \sin(2x) + \sin(3x) = \cos(x) + \cos(2x) + \cos(3x) \\
+    & (\sin(x) + \sin(3x)) + \sin(2x) = (\cos(x) + \cos(3x)) + \cos(2x) \\
+    & 2\sin(2x)\cos(x) + \sin(2x) = 2\cos(2x)\cos(x) + \cos(2x) \\
+    & \sin(2x)(2\cos(x) + 1) = \cos(2x)(2\cos(x) + 1) \\
+    & (\sin(2x) - \cos(2x))(2\cos(x) + 1) = 0 \\
+    & \begin{tabular}{ l l l }
+        $\sin(2x) - \cos(2x) = 0$ & $\vee$ & $2\cos(x) + 1 = 0$ \\
+        $\sin(2x) = \cos(2x)$ & $\vee$ & $2\cos(x) = -1$ \\
+        $\tan(2x) = 1$ & $\vee$ & $\cos(x) = -\frac{1}{2}$ \\
+        & & $x = \frac{\pi}{4} + k\pi, \quad k \in \mathbb{Z} \quad \vee \quad x = \pm \frac{2\pi}{3} + 2k\pi, \quad k \in \mathbb{N}$ \\
+    \end{tabular}
+\end{align}
+
+
+
+\end{document}

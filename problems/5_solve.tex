@@ -1,0 +1,31 @@
+\documentclass[preview,convert={density=300,outext=.png}]{standalone}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{amsmath}
+
+\definecolor{mybackground}{rgb}{0, 0, 0}
+\pagecolor{mybackground}
+\color{white}
+\everymath{\color{white}}
+
+\begin{document}
+
+\begin{align*}
+    & \cos(2x) = \sin(x) + 1 \\
+    & \\
+    & 1 - 2\sin^2(x) - \sin(x) - 1 = 0 \\
+    & 2\sin^2(x) + \sin(x) = 0 \\
+    & \sin(x)(2\sin(x) + 1) = 0 \\
+    & \begin{tabular}{ l l l }
+        $\sin(x) = 0$ & $\vee$ & $2\sin(x) = -1$ \\
+        $x = k\pi$ & $\vee$ & $\sin(x) = -\frac{1}{2}$ \\
+        $ $ & $ $ & $x = \frac{5\pi}{6} + 2k\pi \vee x = \frac{7\pi}{6} + 2k\pi$ \\
+    \end{tabular}
+\end{align*}
+
+
+
+\end{document}

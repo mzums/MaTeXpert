@@ -1,0 +1,30 @@
+\documentclass[preview,convert={density=300,outext=.png}]{standalone}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{amsmath}
+
+\definecolor{mybackground}{rgb}{0, 0, 0}
+\pagecolor{mybackground}
+\color{white}
+\everymath{\color{white}}
+
+\begin{document}
+
+\begin{align*}
+    & 4\cos^2(2x) - 3 < 0, \ \ \ \ x \in \langle 0, 2\pi \rangle \\
+    & \\
+    & \cos^2(2x) < \frac{3}{4} \\
+    & \begin{tabular}{ l l l l l}
+        $\cos(2x) < \frac{3}{4}$ & $\cup$ & $\cos(2x) < -\frac{3}{4}$ & &\\
+        $2x \in \left(\frac{\pi}{6}; \frac{5\pi}{6}\right)$ & $\cup$ & $2x \in \left(\frac{7\pi}{6}; \frac{11\pi}{6}\right)$ & $\wedge$ & $2x \in \langle 0, 2\pi \rangle$ \\
+        $x \in \left(\frac{\pi}{12}; \frac{5\pi}{12}\right)$ & $\cup$ & $x \in \left(\frac{7\pi}{12}; \frac{11\pi}{12}\right)$ & $\wedge$ & $x \in \langle 0, \pi \rangle$\\
+    \end{tabular} \\ 
+    & x \in \left(\frac{\pi}{12}; \frac{5\pi}{12}\right) \cup \left(\frac{7\pi}{12}; \frac{11\pi}{12}\right) \cup \left(\frac{13\pi}{12}; \frac{17\pi}{12}\right) \cup \left(\frac{19\pi}{12}; \frac{23\pi}{12}\right) \\
+\end{align*}
+
+
+
+\end{document}

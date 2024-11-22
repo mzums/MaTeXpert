@@ -18,10 +18,8 @@ pub fn sub_menu_options() {
 
 pub fn problem_options() {
     println!("Pick option:");
-    println!("1 - another problem");
-    println!("2 - show result");
-    println!("3 - back");
-    println!("4 - quit program");
+    println!("1 - show result");
+    println!("2 - quit program");
 }
 
 pub fn result_options() {
@@ -33,7 +31,6 @@ pub fn result_options() {
 }
 
 pub fn display_img(img: &str, width: i32) {
-    //println!("{}", img);
     if cfg!(target_os = "linux") {
         let command = format!("viu {}.png -w {}", img, width);
         let status = Command::new("sh")
